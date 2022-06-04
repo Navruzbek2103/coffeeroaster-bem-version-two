@@ -1,0 +1,275 @@
+/* barlow-regular - latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/barlow-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/barlow-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/barlow-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fraunces-regular - latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/fraunces-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/fraunces-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fraunces-900 - latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/fraunces-v22-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/fraunces-v22-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  /* background-color: #F2F2F2; */
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces";
+}
+img{
+  vertical-align: middle;
+}
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+  padding: 0;
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.container{
+  width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+.header{
+  padding: 43px 0;
+}
+.header__container{
+  display: flex;
+  align-items: center;
+}
+.header__link{
+  margin-right: auto;
+}
+.header__nav-list{
+  display: flex;
+}
+.header__nav-link{
+  text-decoration: none;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+}
+.header__nav-link--active{
+  margin: 0 32px;
+}
+.hero__container {
+  padding: 117px 85px;
+  background-image: url("./../images/hero-img.jpg");
+}
+.hero__inner {
+  width: 493px;
+}
+.hero__inner-heading {
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+.hero__inner-text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  opacity: 0.8;
+  margin-bottom: 56px;
+}
+.hero__inner-btn {
+  padding: 15px 31px;
+  background: #0E8784;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: 'Fraunces 9pt';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+}
+.collection{
+  padding: 136px 200px;
+}
+.collection__inner-container{
+  width: 1151px;
+}
+.collection__container {
+  background-image: url("./../images/our-collection.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 0;
+  padding-top: 126px;
+}
+
+.collection__list {
+  display: flex;
+  justify-content: space-between;
+}
+.collection__item {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.collection__item-img {
+  width: 255px;
+  height: 193px;
+  object-fit: contain;
+  margin-bottom: 67px;
+}
+.collection__item-heading {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+  margin-bottom: 24px;
+}
+
+.collection__item-text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333D4B;
+}
+.choice {
+}
+.container {
+}
+.choice__container {
+  position: relative;
+  background: #2C343E;
+  border-radius: 10px;
+  padding: 100px 85px;
+}
+.choice__container-inner {
+  width: 540px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.choice__inner-heading {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+.choice__inner-text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #FEFCF7;
+  opacity: 0.8;
+}
+.choice__container-list {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 327px;
+}
+.choice__container-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 72px 48px 48px 47px;
+  background: #0E8784;
+  border-radius: 8px;
+}
+.choice__container-item:nth-child(2){
+  margin: 0 30px;
+}
+.choice__container-item::before{
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 56px;
+}
+.choice__container-item:nth-child(1)::before{
+  background-image: url("./../images/best-quality.svg");
+}
+.choice__container-item:nth-child(2)::before{
+  background-image: url("./../images/exclusive-benefits.svg");
+}
+.choice__container-item:nth-child(3)::before{
+  background-image: url("./../images/free-shipping.svg");
+}
+.choice__item-heading {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FEFCF7;
+  margin-bottom: 24px;
+}
+.choice__item-text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #FEFCF7;
+}
